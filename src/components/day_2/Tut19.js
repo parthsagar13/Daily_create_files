@@ -7,7 +7,8 @@ export default function Tut19() {
      {loggedIn===1?
      <h1>Welcome User 1</h1>
      :loggedIn==2?<h1>Welcome User2</h1>
-     :<h1>Welcome User3</h1>}
- </div>
+     :<h1>Welcome User3</h1>
+    }   
+ </div>   
   )
 }
