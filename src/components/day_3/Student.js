@@ -8,7 +8,7 @@ function Student(props) {
     )
 }
 
-export default Student
+export default Student;
 
 
 

@@ -1,15 +1,14 @@
+import React, { useState } from 'react';
 
-import './App.css';
-import Tut23 from './components/day_3/Tut23';
-import Tut27 from './components/day_3/Tut27';
 
-function App() {
-  return (     
-    <div className="App">
-      <Tut23/>
-      <Tut27/>
+const App = () => {
+
+
+  return (
+    <div>
+     <h2>hello word</h2>
     </div>
   );
-}
- 
+};
+
 export default App;
