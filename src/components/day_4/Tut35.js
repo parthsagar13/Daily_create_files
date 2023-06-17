@@ -5,7 +5,7 @@ export default function Tut35() {
     const users = [
       { name: 'Parth', email: 'kalathiyaparth744@gmail.com', contact: '9510690056' },
       { name: 'sanjay', email: 'sanjay@test.com', contact: '222' },
-      { name: 'haresh', email: 'haresh@test.com', contact: '111' },
+      { name: 'haresh', email: 'haresh@test.com', contact: '111' }, 
       { name: 'ravi', email: 'ravi@test.com', contact: '777' },
       { name: 'vishal', email: 'vishal@test.com', contact: '777' },
     ]

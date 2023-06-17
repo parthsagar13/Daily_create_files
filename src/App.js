@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react'
+import UseMemo from './components/10-day_17_june/useMemo/UseMemo'
+// import UseRef from './components/10-day_17_june/useRef/UseRef'
+// import UseNavigate from './components/10-day_17_june/useNavigate/UseNavigate'
+// import UseLayoutEffect from './components/10-day_17_june/useLayout/UseLayout'
+// import Usestate from './components/10-day_17_june/usestate/Usestate'
 
-
-const App = () => {
-
-
+export default function App() {
   return (
     <div>
-     <h2>hello word</h2>
+      {/* <Usestate/> */}
+      {/* <UseLayoutEffect/> */}
+      {/* <UseNavigate/> */}
+      {/* <UseRef/> */}
+      <UseMemo/>
+      
     </div>
-  );
-};
-
-export default App;
+  )
+}
