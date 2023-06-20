@@ -2,8 +2,8 @@
 
 // useEffect runs asynchronously and after a render is painted to the screen.
 
-import React, { useState, useLayoutEffect, useEffect } from "react";
-
+import React, { useState, useLayoutEffect } from "react";
+          
 const UseLayoutEffect = () => {
   const [num, setNum] = useState(0);
 

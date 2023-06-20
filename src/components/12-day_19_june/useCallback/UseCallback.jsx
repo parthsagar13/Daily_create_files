@@ -10,6 +10,7 @@ export default function UseCallback() {
   const increment = () => {
     setCount((count) => count + 1);
   };
+  // eslint-disable-next-line
   const addTodo = useCallback(() => {
     setTodos((todos) => [todos, "New Todo"]);
   });

@@ -1,5 +1,8 @@
 import React from 'react'
-import UseTransition from './components/12-day_19_june/useTransition/UseTransition'
+import App1 from './components/13-day_20_june/Nested Component/App1'
+// import NestedpassProps from './components/13-day_20_june/Nested Component/NestedpassProps'
+// import Nested from './components/13-day_20_june/Nested Component/Nested'
+// import UseTransition from './components/12-day_19_june/useTransition/UseTransition'
 // import UseReducer from './components/12-day_19_june/useRedcer/UseReducer'
 // import UseContext from './components/12-day_19_june/useContext/UseContext'
 // import UseCallback from './components/12-day_19_june/useCallback/UseCallback'
@@ -20,8 +23,11 @@ export default function App() {
       {/* <UseCallback/> */}
       {/* <UseContext/> */}
       {/* <UseReducer/> */}
-      <UseTransition/>
-      
+      {/* <UseTransition/> */}
+      {/* <Nested/> */}
+      {/* <NestedpassProps/> */}
+      <App1/>
+
     </div>
   )
 }
