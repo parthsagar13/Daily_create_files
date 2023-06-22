@@ -1,16 +1,15 @@
-import React, { useState } from "react";
-// import { useMemo } from 'react';
+import React, { useMemo, useState } from "react";
 
 export default function UseMemo() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(50);
   const [todos, setTodos] = useState([]);
-  // const calculation = useMemo(() => expensiveCalculation(count), [count]);
-  const calculation = expensiveCalculation(count);
+  const calculation = useMemo(() => expensiveCalculation(count), [count]);
+  // const calculation = expensiveCalculation(count);
 
-  const increment = () => {
-    setCount((c) => c + 1);
+  const increment = () => { 
+    setCount((count) => count + 1);
   };
-  const addTodo = () => {
+  const addTodo = () => { 
     setTodos((t) => [...t, "New Todo"]);
   };
 

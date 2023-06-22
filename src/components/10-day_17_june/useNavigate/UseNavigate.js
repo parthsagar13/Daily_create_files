@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom"
   
 const UseNavigate = () => {
   const navigate = useNavigate();
-  const parth = useRef(0);
+ 
 
   
   return (

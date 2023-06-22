@@ -8,7 +8,7 @@ const UseLayoutEffect = () => {
   const [num, setNum] = useState(0);
 
   useLayoutEffect(() => {
-    if (num === 0) setNum(5 + Math.random() * 50);
+    if (num === 0) setNum(5 + 70 * 50);
   }, [num]);
 
   return (

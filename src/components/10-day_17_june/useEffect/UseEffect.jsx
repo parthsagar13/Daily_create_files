@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
 export default function UseEffect () { 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(2000);
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
-    // Update the document title using the browser API
+    
     document.title = `You clicked ${count} times`;
+    console.log('parth')
   },);
-
+  
 
   return (
     <div>

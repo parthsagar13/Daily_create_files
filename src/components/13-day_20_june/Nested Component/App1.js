@@ -4,10 +4,6 @@ import { useState } from 'react';
 
 export default function App1() {
     const [UIColor, setUIColor] = useState(null);
-  
-    //perent Component
-
-    //  our callback Fuction
 
     const getColor = (color) => {
         setUIColor(color)
