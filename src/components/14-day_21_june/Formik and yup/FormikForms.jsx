@@ -27,7 +27,7 @@ const  validationSchema = yup.object().shape({
   return (
     <Fragment>
       <div className="container">
-        <div className="col-md-12 text-center mt-5">
+        <div className="position-absolute top-0 start-50 translate-middle-x">
           <h1>Form Validation with Formik and Yup</h1>
           <Formik 
           initialValues={defaultvalue}
@@ -35,10 +35,10 @@ const  validationSchema = yup.object().shape({
              onSubmit={handleSubmit}
           >
             <Form>
-              <div className="col-md-12 mt-4">
+              <div className="col-md-16 mt-4">
                 <Field
                   type="text"
-                  name="name"
+                  name="name" 
                   placeholder="Enter Your name"
                   className="form-control"
                 />
@@ -57,7 +57,7 @@ const  validationSchema = yup.object().shape({
                     <ErrorMessage name="email"/>
                 </p>
               </div>
-              <div className="col-md-12 mt-4">
+              <div className="col-md-12 mt-4 ">
                 <Field
                   type="text"
                   name="password"
@@ -79,7 +79,7 @@ const  validationSchema = yup.object().shape({
                 </p>
               </div>
               <div className="col-md-12 mt-4">
-              <label  className="form-check">
+              <label  >
                <Field type="checkbox" name="termsAndCond" ></Field>
                I accept terms and conditions
               </label > 
@@ -87,13 +87,13 @@ const  validationSchema = yup.object().shape({
                     <ErrorMessage name="termsAndCond"/>
                 </p>
               </div>
-              <div className="col-md-12 mt-4">
-              <label >
-               <Field type="radio" value="bike" name="transportMode" ></Field>
+              <div className="col-md-12 mt-4 ">
+              <label className=" ms-1" >
+               <Field className="form-check-input " type="radio" value="bike" name="transportMode" ></Field>
                Bike
               </label > 
-              <label >
-               <Field type="radio" value="car" name="transportMode" ></Field>
+              <label  className="ms-1">
+               <Field  className="form-check-input " type="radio" value="car" name="transportMode" ></Field>
                Car
               </label > 
                      <p className="text-danger">
