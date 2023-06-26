@@ -8,7 +8,7 @@ export default function Home() {
       <>
       <h1>Home</h1>
       <br />
-      <button onClick={() => navigate('ordersummary',  { replace : true })} className="btn btn-primary">Please Order</button>
+      <button onClick={() => navigate('ordersummary',  { replace : true })} className="btn btn-primary">Please Order </button>
       </>
     </div>
   )

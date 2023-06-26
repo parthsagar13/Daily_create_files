@@ -1,17 +1,22 @@
 import React from "react";
-import Home from "./components/16-day_23_june/React_Router/Home";
+// import Home from "./components/16-day_23_june/React_Router/Home";
 import { Route, Routes } from "react-router-dom";
-import About from "./components/16-day_23_june/React_Router/About";
-import Navbar from "./components/16-day_23_june/React_Router/Navbar";
-import OrderSummary from "./components/16-day_23_june/React_Router/OrderSummary";
-// import NoMatchRoutes from "./co  mponents/16-day_23_june/React_Router/NoMatchRoutes";
-import FeaturedProduct from "./components/16-day_23_june/React_Router/FeaturedProduct";
-import NewProduct from "./components/16-day_23_june/React_Router/NewProduct";
-import Product from "./components/16-day_23_june/React_Router/Product";
-import User from "./components/16-day_23_june/React_Router/Dynemic_Routes/User";
+import HomePage from "./components/19-day_26_june/Login_Page/HomePage";
+import Login from "./components/19-day_26_june/Login_Page/Login";
+import Singup from "./components/19-day_26_june/Login_Page/Signup";
+// import About from "./components/16-day_23_june/React_Router/About";
+// import Navbar from "./components/16-day_23_june/React_Router/Navbar";
+// import OrderSummary from "./components/16-day_23_june/React_Router/OrderSummary";
+// import NoMatchRoutes from "./components/16-day_23_june/React_Router/NoMatchRoutes";
+// import FeaturedProduct from "./components/16-day_23_june/React_Router/FeaturedProduct";
+// import NewProduct from "./components/16-day_23_june/React_Router/NewProduct";
+// import Product from "./components/16-day_23_june/React_Router/Product";
+// import User from "./components/16-day_23_june/React_Router/Dynemic_Routes/User";
+// import UserDetails from "./components/16-day_23_june/React_Router/Dynemic_Routes/UserDetails";
+// import Admin from "./components/16-day_23_june/React_Router/Dynemic_Routes/Admin";
 // import UseFormik from './components/14-day_21_june/Formik and yup/UseFormik'
 // import FormikForms from './components/14-day_21_june/Formik and yup/FormikForms'
-// import Parth from './components/16-day_23_june/Formik/Parth'
+// // import Parth from './components/16-day_23_june/Formik/Parth'
 // import App1 from './components/13-day_20_june/Nested Component/App1'
 // import UseEffect from './components/10-day_17_june/useEffect/UseEffect'
 // import NestedpassProps from './components/13-day_20_june/Nested Component/NestedpassProps'
@@ -45,18 +50,26 @@ export default function App() {
       {/* <FormikForms/> */}
       {/* <UseFormik/> */}
       {/* <Parth/> */}
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Singup />} />
+      
+        
+      {/* <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="ordersummary" element={<OrderSummary />} />
         <Route path="product" element={<Product />}>
           <Route path="featuredProduct" element={<FeaturedProduct />} />
           <Route index element={<FeaturedProduct />} />
           <Route path="newProduct" element={<NewProduct />} />
+        <Route path="*" element={<NoMatchRoutes />} />
         </Route>
-        {/* <Route path="*" element={<NoMatchRoutes />} /> */}
-        <Route path="user" element={<User />}/>
+        <Route path="user" element={<User />}>
+        <Route path=":userId" element={<UserDetails />}/>
+        <Route path="admin" element={<Admin />}/>
+       </Route> */}
       </Routes>
     </div>
   );
