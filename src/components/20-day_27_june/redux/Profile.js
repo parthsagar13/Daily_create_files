@@ -21,7 +21,7 @@ export default function Profile() {
       dispatch(ChangeAge(age))
       dispatch(ChangeStatus(status))
     
-
+   
       }
 
 
