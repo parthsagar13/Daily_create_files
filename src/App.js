@@ -1,5 +1,6 @@
 import React from "react";
-import Profile from "./components/20-day_27_june/redux/Profile";
+import News from "./components/22-day_29_june/axios/News";
+import { Axios } from "axios";
 
 
 
@@ -7,7 +8,7 @@ import Profile from "./components/20-day_27_june/redux/Profile";
 export default function App() {
   return (
     <div>
-     <Profile/>
+     <News/>
     </div>
   )
 }

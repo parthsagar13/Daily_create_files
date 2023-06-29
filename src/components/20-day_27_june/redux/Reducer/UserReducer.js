@@ -5,6 +5,7 @@ const initialState ={
     name:'Parth',
     age:'19',
     status:'Coder',
+    articles: [],
   }
 
 
