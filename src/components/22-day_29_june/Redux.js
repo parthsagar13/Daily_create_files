@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const initialState = {
   imageData: [],
-  status: 'null',
+  status: 'idle',
   error: null,
 };
 

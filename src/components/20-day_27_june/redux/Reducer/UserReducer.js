@@ -53,6 +53,9 @@ const userReduscer =  createSlice({
         },
         ChangeStatus(state,action){
             state.status = action.payload
+        },
+        ChangeNews(state,action){
+            state.news = action.payload
         }
     },
     extraReducers:{
